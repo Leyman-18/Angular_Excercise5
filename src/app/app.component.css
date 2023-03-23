@@ -38,7 +38,7 @@ footer{
 
 header{
   grid-area: header;
-  /* padding: 45px;  */
+  padding: 45px; 
   font-size: 1rem;
   border: 1px solid #a8dadc;
   text-align: center; 
@@ -59,8 +59,13 @@ nav li{
 }
 
 .picture img{
-  object-fit: cover;
-  height: 200px;
+  /* display: none; */
+  /* object-fit: cover; */
+  /* width: 50%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover; */
+  /* height: 200px; */
 }
 
 .header img{
