@@ -50,23 +50,15 @@ main{
   position: relative;
 }
 
-nav a{
-  text-decoration: none;
-}
-
-nav li{
-  margin-bottom: 10px;
-}
-
-.picture img{
-  /* display: none; */
-  /* object-fit: cover; */
-  /* width: 50%;
+/* .picture img{
+  display: none; 
+  object-fit: cover;
+  width: 50%;
   min-height: 100vh;
   background-position: center;
-  background-size: cover; */
-  /* height: 200px; */
-}
+  background-size: cover;
+  height: 200px; 
+} */
 
 .header img{
   object-fit: cover;
