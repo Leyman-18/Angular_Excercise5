@@ -9,6 +9,7 @@ import { MenuItem } from 'primeng/api';
 export class AsideComponent implements OnInit {
   public items: MenuItem[] = [];
 
+  
   ngOnInit() {
     this.items = [
       {
