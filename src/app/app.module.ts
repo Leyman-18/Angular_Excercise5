@@ -12,7 +12,9 @@ import { AsideComponent } from './components/layout/aside/aside.component';
 import { TokioComponent } from './components/layout/content/content_components/tokio/tokio.component';
 import { VeneciaComponent } from './components/layout/content/content_components/venecia/venecia.component';
 import { LondresComponent } from './components/layout/content/content_components/londres/londres.component';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { LondresComponent } from './components/layout/content/content_components
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PanelMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
