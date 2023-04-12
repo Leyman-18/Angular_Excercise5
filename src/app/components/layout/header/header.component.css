@@ -7,13 +7,14 @@ section {
 }
 
 .logo{
-  flex-grow: 1;
+  /* flex-grow: ; */
 }
 
 .logo img{
   width: 200px;
-  height: 184px;
-  padding: 1vh;
+  height: 200px;
+  /* padding: 1vh; */
+  align-items: center center;
 }
 
 .title{

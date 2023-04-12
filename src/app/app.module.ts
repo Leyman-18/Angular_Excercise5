@@ -17,6 +17,9 @@ import { MenubarModule } from 'primeng/menubar';
 import { TabMenuModule } from 'primeng/tabmenu';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ViajerosComponent } from './components/layout/content/content_components/viajeros/viajeros.component';
+import { DestinosComponent } from './components/layout/content/content_components/destinos/destinos.component';
+import { ReferenciasfComponent } from './components/layout/content/content_components/referenciasf/referenciasf.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TokioComponent,
     VeneciaComponent,
     LondresComponent,
+    ViajerosComponent,
+    DestinosComponent,
+    ReferenciasfComponent,
   ],
   imports: [
     BrowserModule,

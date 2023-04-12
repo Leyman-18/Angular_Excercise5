@@ -1,15 +1,36 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './components/layout/content/content_components/home/home.component';
 import { LondresComponent } from './components/layout/content/content_components/londres/londres.component';
 import { NewyorkComponent } from './components/layout/content/content_components/newyork/newyork.component';
 import { TokioComponent } from './components/layout/content/content_components/tokio/tokio.component';
 import { VeneciaComponent } from './components/layout/content/content_components/venecia/venecia.component';
+import { ViajerosComponent } from './components/layout/content/content_components/viajeros/viajeros.component';
+import { ReferenciasfComponent } from './components/layout/content/content_components/referenciasf/referenciasf.component';
+import { DestinosComponent } from './components/layout/content/content_components/destinos/destinos.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
+  {
     path:"home",
     component:HomeComponent
+  },
+  {
+    path: "destinos",
+    component: DestinosComponent
+  },
+  {
+    path: "viajeros",
+    component: ViajerosComponent
+  },
+  {
+    path: "familiares",
+    component: ReferenciasfComponent
   },
   {
     path:"newyork",

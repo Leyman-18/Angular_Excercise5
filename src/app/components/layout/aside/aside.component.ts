@@ -13,7 +13,66 @@ export class AsideComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Viajeros'
+        label: 'Bienvenidos',
+        icon: 'pi pi-home',
+        routerLink: '/home',
+      },
+      {
+        label: 'Viajeros',
+        icon: 'pi pi-users',
+        routerLink: '/viajeros',
+        items: [
+          {
+            label: 'Agregar'
+          },
+          {
+            label: 'Mostrar'
+          },
+          {
+            label: 'Modificar'
+          },
+          {
+            label: 'Eliminar'
+          }
+        ]
+      },
+      {
+        label:'Referencias Familiares',
+        icon: 'pi pi-id-card',
+        routerLink: '/familiares',
+        items: [
+          {
+            label: 'Agregar'
+          },
+          {
+            label: 'Mostrar'
+          },
+          {
+            label: 'Modificar'
+          },
+          {
+            label: 'Eliminar'
+          }
+        ]
+      },
+      {
+        label: 'Destinos',
+        icon: 'pi pi-map-marker',
+        routerLink: '/destinos',
+        items: [
+          {
+            label: 'Agregar'
+          },
+          {
+            label: 'Mostrar'
+          },
+          {
+            label: 'Modificar'
+          },
+          {
+            label: 'Eliminar'
+          }
+        ]
       }
       // {
       //   label: 'File',
