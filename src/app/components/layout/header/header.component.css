@@ -3,18 +3,12 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-}
-
-.logo{
-  /* flex-grow: ; */
+  place-items: center;
 }
 
 .logo img{
-  width: 200px;
-  height: 200px;
-  /* padding: 1vh; */
-  align-items: center center;
+  width: 100px;
+  height: 100px;
 }
 
 .title{
@@ -23,6 +17,3 @@ section {
   color: #8B0000;
 }
 
-nav{
-  /* flex-grow: ; */
-}

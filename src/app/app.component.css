@@ -8,36 +8,35 @@ main {
   "header header  header  header  header"
   "aside  section section section section"
   "footer footer  footer  footer  footer";
-  /* row-gap: 1;
-  column-gap: 1; */
   grid-template-rows: 20% 70% 10%;
   height: 100vh;
 }
 
 section {
   grid-area: section;
-  /* border: 1px solid #a8dadc; */
   border: 1px solid #FF7F50;
   background-color: white;
   padding: 20px;
+  min-height: calc(200vh - 100px - 300px);
 }
 
 aside {
   grid-area: aside;
-  /* border: 1px solid #a8dadc; */
   border: 1px solid #FF7F50;
-  /* background-color: #f1f1f1;  */
-  /* background-color: #000; */
   padding: 20px;
+  min-height: calc(100vh - 100px - 300px);
 }
 
 footer{
   grid-area: footer;
-  /* border: 1px solid #a8dadc; */
   border: 1px solid #FF7F50;
   background-color: #ddd;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 header{
