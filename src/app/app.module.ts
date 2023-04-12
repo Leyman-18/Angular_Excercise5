@@ -13,6 +13,8 @@ import { TokioComponent } from './components/layout/content/content_components/t
 import { VeneciaComponent } from './components/layout/content/content_components/venecia/venecia.component';
 import { LondresComponent } from './components/layout/content/content_components/londres/londres.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { MenubarModule } from 'primeng/menubar';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -33,7 +35,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     PanelMenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MenubarModule,
+    // TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

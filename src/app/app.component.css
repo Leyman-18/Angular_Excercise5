@@ -16,35 +16,40 @@ main {
 
 section {
   grid-area: section;
-  border: 1px solid #a8dadc;
+  /* border: 1px solid #a8dadc; */
+  border: 1px solid #FF7F50;
   background-color: white;
   padding: 20px;
 }
 
 aside {
   grid-area: aside;
-  border: 1px solid #a8dadc;
+  /* border: 1px solid #a8dadc; */
+  border: 1px solid #FF7F50;
   /* background-color: #f1f1f1;  */
   /* background-color: #000; */
-  padding: 20px; 
+  padding: 20px;
 }
 
 footer{
   grid-area: footer;
-  border: 1px solid #a8dadc;
+  /* border: 1px solid #a8dadc; */
+  border: 1px solid #FF7F50;
   background-color: #ddd;
-  padding: 20px; 
+  padding: 20px;
   text-align: center;
 }
 
 header{
   grid-area: header;
-  padding: 17px; 
+  padding: 17px;
   font-size: 1rem;
-  border: 1px solid #a8dadc;
-  text-align: center; 
-  background: #1abc9c;
-  color: white; 
+  /* border: 1px solid #a8dadc; */
+  border: 1px solid #FF7F50;
+  text-align: center;
+  /* background: #1abc9c; */
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
+  color: white;
 }
 
 main{
@@ -52,13 +57,13 @@ main{
 }
 
 /* .picture img{
-  display: none; 
+  display: none;
   object-fit: cover;
   width: 50%;
   min-height: 100vh;
   background-position: center;
   background-size: cover;
-  height: 200px; 
+  height: 200px;
 } */
 
 .header img{

@@ -1,0 +1,26 @@
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  flex-grow: 1;
+}
+
+.logo img{
+  width: 200px;
+  height: 184px;
+  padding: 1vh;
+}
+
+.title{
+  flex-grow: 3;
+  color: #8B0000;
+}
+
+nav{
+  /* flex-grow: ; */
+}
