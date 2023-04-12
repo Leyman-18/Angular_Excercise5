@@ -1,6 +1,6 @@
 
 main {
-  font-family: Helvetica, sans-serif;
+  
   display: grid;
   /* gap: 7px; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -11,7 +11,7 @@ main {
   /* row-gap: 1;
   column-gap: 1; */
   grid-template-rows: 20% 70% 10%;
-  height: 98vh;
+  height: 100vh;
 }
 
 section {
