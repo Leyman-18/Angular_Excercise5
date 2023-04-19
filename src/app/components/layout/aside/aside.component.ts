@@ -73,7 +73,33 @@ export class AsideComponent implements OnInit {
             label: 'Eliminar'
           }
         ]
-      }
+      },
+      {
+        label: 'Typescript',
+        icon: 'pi pi-file-edit',
+        routerLink: '',
+        items: [
+          {
+            label: 'ejemplo 1',
+            icon: 'pi pi-code',
+            routerLink: '/ejemplo1'
+          },
+          {
+            label: 'ejemplo 2',
+            icon: 'pi pi-code',
+            routerLink: '/ejemplo2'
+          },
+          {
+            label: 'ejemplo 3',
+            icon: 'pi pi-code',
+            routerLink: '/ejemplo3'
+          },
+          {
+            label: 'ejemplo 4'
+          },
+        ]
+      },
+
       // {
       //   label: 'File',
       //   icon: 'pi pi-fw pi-file',

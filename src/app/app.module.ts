@@ -20,6 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ViajerosComponent } from './components/layout/content/content_components/viajeros/viajeros.component';
 import { DestinosComponent } from './components/layout/content/content_components/destinos/destinos.component';
 import { ReferenciasfComponent } from './components/layout/content/content_components/referenciasf/referenciasf.component';
+import { Ejemplo1Component } from './components/ejemplos/ejemplo1/ejemplo1.component';
+import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.component';
+import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { ReferenciasfComponent } from './components/layout/content/content_compo
     ViajerosComponent,
     DestinosComponent,
     ReferenciasfComponent,
+    Ejemplo1Component,
+    Ejemplo2Component,
+    Ejemplo3Component,
   ],
   imports: [
     BrowserModule,

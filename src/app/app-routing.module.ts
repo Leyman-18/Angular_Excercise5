@@ -9,6 +9,9 @@ import { VeneciaComponent } from './components/layout/content/content_components
 import { ViajerosComponent } from './components/layout/content/content_components/viajeros/viajeros.component';
 import { ReferenciasfComponent } from './components/layout/content/content_components/referenciasf/referenciasf.component';
 import { DestinosComponent } from './components/layout/content/content_components/destinos/destinos.component';
+import { Ejemplo1Component } from './components/ejemplos/ejemplo1/ejemplo1.component';
+import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.component';
+import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
 
 const routes: Routes = [
   {
@@ -47,6 +50,18 @@ const routes: Routes = [
   {
     path:"tokio",
     component:TokioComponent
+  },
+  {
+    path: "ejemplo1",
+    component: Ejemplo1Component
+  },
+  {
+    path: "ejemplo2",
+    component: Ejemplo2Component
+  },
+  {
+    path: "ejemplo3",
+    component: Ejemplo3Component
   }
 ];
 
