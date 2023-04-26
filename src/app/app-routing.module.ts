@@ -12,6 +12,8 @@ import { DestinosComponent } from './components/layout/content/content_component
 import { Ejemplo1Component } from './components/ejemplos/ejemplo1/ejemplo1.component';
 import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.component';
 import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
+import { Ejemplo4Component } from './components/ejemplos/ejemplo4/ejemplo4.component';
+import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.component';
 
 const routes: Routes = [
   {
@@ -62,6 +64,14 @@ const routes: Routes = [
   {
     path: "ejemplo3",
     component: Ejemplo3Component
+  },
+  {
+    path: "ejemplo4",
+    component: Ejemplo4Component
+  },
+  {
+    path: "ejemplo5",
+    component: Ejemplo5Component
   }
 ];
 

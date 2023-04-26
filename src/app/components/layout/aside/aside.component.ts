@@ -95,7 +95,14 @@ export class AsideComponent implements OnInit {
             routerLink: '/ejemplo3'
           },
           {
-            label: 'ejemplo 4'
+            label: 'ejemplo 4',
+            icon: 'pi pi-code',
+            routerLink: '/ejemplo4'
+          },
+          {
+            label: 'ejemplo 5',
+            icon: 'pi pi-code',
+            routerLink: '/ejemplo5'
           },
         ]
       },
