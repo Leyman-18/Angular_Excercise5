@@ -14,6 +14,8 @@ import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.compo
 import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
 import { Ejemplo4Component } from './components/ejemplos/ejemplo4/ejemplo4.component';
 import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.component';
+import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercicio1.component';
+import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
 
 const routes: Routes = [
   {
@@ -72,6 +74,14 @@ const routes: Routes = [
   {
     path: "ejemplo5",
     component: Ejemplo5Component
+  },
+  {
+    path: "ejercicio1",
+    component: Ejercicio1Component
+  },
+  {
+    path: "ejercicio1vista",
+    component: Ejercicio1vistaComponent
   }
 ];
 

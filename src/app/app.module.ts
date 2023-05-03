@@ -25,6 +25,8 @@ import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.compo
 import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
 import { Ejemplo4Component } from './components/ejemplos/ejemplo4/ejemplo4.component';
 import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.component';
+import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercicio1.component';
+import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.compo
     Ejemplo3Component,
     Ejemplo4Component,
     Ejemplo5Component,
+    Ejercicio1Component,
+    Ejercicio1vistaComponent,
   ],
   imports: [
     BrowserModule,
