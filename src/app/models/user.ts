@@ -1,12 +1,11 @@
 export interface usuario {
     nombre: string;
-    // edad: number;
     fechaN: Date;
     cargo: string;
-    salario?: number;
+    salario: number;
 
-    viewUser():void
-    calcularEdad():void
+    // viewUser():void
+    // calcularEdad():void
   }
 
   export class usuarioC {

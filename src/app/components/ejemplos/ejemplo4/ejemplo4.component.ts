@@ -20,32 +20,19 @@ export class Ejemplo4Component implements OnInit{
       fechaN: new Date('2000-01-07'),
       cargo: 'estudiante',
       salario: 1000000,
-      viewUser() {
-        console.log(`
-        nombre: ${listUser.nombre}
-        edad:${listUser.fechaN}
-        cargo:${listUser.cargo}
-        salario:${listUser.salario}`)
-      },
-      calcularEdad() {
-        let edad=moment().diff(listUser.fechaN,'years');
-        return edad;
-      },
-      
-      
-      // calcularEdad = (listUser: usuario)=>{
+      // viewUser() {
+      //   console.log(`
+      //   nombre: ${listUser.nombre}
+      //   edad:${listUser.fechaN}
+      //   cargo:${listUser.cargo}
+      //   salario:${listUser.salario}`)
+      // },
+      // calcularEdad() {
       //   let edad=moment().diff(listUser.fechaN,'years');
       //   return edad;
-        // let fechaA = new Date;
-        // let edad = fechaA.getFullYear() - this.fechaN.getFullYear();
-        // let diferenciaMeses = fechaA.getMonth() - this.fechaN.getMonth()
-        // if (
-        //   diferenciaMeses < 0 ||
-        //   (diferenciaMeses === 0 && fechaA.getDate() < this.fechaN.getDate())
-        // ) {
-        //   edad--
-        // }
-        // return edad
+      // },
+      
+      
     }
 
     // let calcularEdad = (listUser: usuario)=>{
@@ -53,9 +40,10 @@ export class Ejemplo4Component implements OnInit{
     //   return edad;
     // }
     
-    listUser.nombre = 'luisa'
-    listUser.viewUser()
-    console.log(listUser.calcularEdad())
+    // listUser.nombre = 'luisa'
+    // listUser.viewUser()
+    // console.log(listUser.calcularEdad())
+
     // console.log(calcularEdad(listUser))
     
   }

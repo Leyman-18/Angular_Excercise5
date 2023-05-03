@@ -16,6 +16,8 @@ import { Ejemplo4Component } from './components/ejemplos/ejemplo4/ejemplo4.compo
 import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.component';
 import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercicio1.component';
 import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
+import { Ejemplo6Component } from './components/ejemplos/ejemplo6/ejemplo6.component';
+import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
 
 const routes: Routes = [
   {
@@ -76,12 +78,20 @@ const routes: Routes = [
     component: Ejemplo5Component
   },
   {
+    path: "ejemplo6",
+    component: Ejemplo6Component
+  },
+  {
     path: "ejercicio1",
     component: Ejercicio1Component
   },
   {
     path: "ejercicio1vista",
     component: Ejercicio1vistaComponent
+  },
+  {
+    path: "ejemploAgregarUser",
+    component: AgregarUsuarioComponent
   }
 ];
 

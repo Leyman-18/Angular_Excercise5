@@ -27,6 +27,11 @@ import { Ejemplo4Component } from './components/ejemplos/ejemplo4/ejemplo4.compo
 import { Ejemplo5Component } from './components/ejemplos/ejemplo5/ejemplo5.component';
 import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercicio1.component';
 import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
+import { Ejemplo6Component } from './components/ejemplos/ejemplo6/ejemplo6.component';
+import { FormsModule } from '@angular/forms';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +55,8 @@ import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vist
     Ejemplo5Component,
     Ejercicio1Component,
     Ejercicio1vistaComponent,
+    Ejemplo6Component,
+    AgregarUsuarioComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +64,9 @@ import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vist
     PanelMenuModule,
     BrowserAnimationsModule,
     MenubarModule,
+    FormsModule,
+    TableModule,
+    ButtonModule
     // TabMenuModule
   ],
   providers: [],
