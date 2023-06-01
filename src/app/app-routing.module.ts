@@ -18,6 +18,8 @@ import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercici
 import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
 import { Ejemplo6Component } from './components/ejemplos/ejemplo6/ejemplo6.component';
 import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
+import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
+
 
 const routes: Routes = [
   {
@@ -92,6 +94,10 @@ const routes: Routes = [
   {
     path: "ejemploAgregarUser",
     component: AgregarUsuarioComponent
+  },
+  {
+    path: "mostrarCliente",
+    component: MostrarClienteComponent
   }
 ];
 

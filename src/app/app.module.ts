@@ -32,6 +32,8 @@ import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,7 @@ import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/a
     Ejercicio1vistaComponent,
     Ejemplo6Component,
     AgregarUsuarioComponent,
+    MostrarClienteComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,9 @@ import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/a
     MenubarModule,
     FormsModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule
+
     // TabMenuModule
   ],
   providers: [],

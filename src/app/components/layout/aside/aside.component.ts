@@ -124,6 +124,11 @@ export class AsideComponent implements OnInit {
                 icon: 'pi pi-code',
                 routerLink: '/ejercicio1vista'
               },
+              {
+                label: 'mostrar clientes',
+                icon: 'pi pi-code',
+                routerLink: '/mostrarCliente'
+              },
             ]
           }
         ]
