@@ -13,51 +13,21 @@ export class AsideComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Bienvenidos',
-        icon: 'pi pi-home',
-        routerLink: '/home',
-      },
-      {
         label: 'Viajeros',
         icon: 'pi pi-users',
         routerLink: '/viajeros',
-        items: [
-          {
-            label: 'Agregar'
-          },
-          {
-            label: 'Mostrar'
-          },
-          {
-            label: 'Modificar'
-          },
-          {
-            label: 'Eliminar'
-          }
-        ]
       },
       {
         label:'Referencias Familiares',
         icon: 'pi pi-id-card',
-        routerLink: '/familiares',
-        items: [
-          {
-            label: 'Agregar'
-          },
-          {
-            label: 'Mostrar'
-          },
-          {
-            label: 'Modificar'
-          },
-          {
-            label: 'Eliminar'
-          }
-        ]
+        routerLink: '/referencias',
       },
       {
-        label: 'Destinos',
+        label: 'viajes',
         icon: 'pi pi-map-marker',
+<<<<<<< HEAD
+        routerLink: '/viajes',
+=======
         routerLink: '/destinos',
         items: [
           {
@@ -132,7 +102,62 @@ export class AsideComponent implements OnInit {
             ]
           }
         ]
+>>>>>>> 041bc311de65ef507a13618f5df4e42d2618c92f
       },
+      // {
+      //   label: 'Typescript',
+      //   icon: 'pi pi-file-edit',
+      //   routerLink: '',
+      //   items: [
+      //     {
+      //       label: 'ejemplo 1',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo1'
+      //     },
+      //     {
+      //       label: 'ejemplo 2',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo2'
+      //     },
+      //     {
+      //       label: 'ejemplo 3',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo3'
+      //     },
+      //     {
+      //       label: 'ejemplo 4',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo4'
+      //     },
+      //     {
+      //       label: 'ejemplo 5',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo5'
+      //     },
+      //     {
+      //       label: 'ejemplo 6',
+      //       icon: 'pi pi-code',
+      //       routerLink: '/ejemplo6'
+      //     },
+      //     {
+      //       label: 'Ejercicios',
+      //       icon: '',
+      //       routerLink: '',
+      //       items: [
+      //         {
+      //           label: 'ejercicio 1',
+      //           icon: 'pi pi-code',
+      //           routerLink: '/ejercicio1'
+      //         },
+      //         {
+      //           label: 'ejercicio 1 vista',
+      //           icon: 'pi pi-code',
+      //           routerLink: '/ejercicio1vista'
+      //         },
+      //       ]
+      //     }
+      //   ]
+      // },
 
       // {
       //   label: 'File',

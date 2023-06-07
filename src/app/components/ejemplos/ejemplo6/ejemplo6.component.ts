@@ -7,8 +7,7 @@ import { usuario } from 'src/app/models/user';
   styleUrls: ['./ejemplo6.component.css']
 })
 export class Ejemplo6Component implements OnInit {
-  public listUser:usuario[] = [
-  ];
+  public listUser:usuario[] = [];
 
   constructor(){}
 

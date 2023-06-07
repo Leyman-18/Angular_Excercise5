@@ -1,14 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './components/layout/content/content_components/home/home.component';
-import { LondresComponent } from './components/layout/content/content_components/londres/londres.component';
-import { NewyorkComponent } from './components/layout/content/content_components/newyork/newyork.component';
-import { TokioComponent } from './components/layout/content/content_components/tokio/tokio.component';
-import { VeneciaComponent } from './components/layout/content/content_components/venecia/venecia.component';
-import { ViajerosComponent } from './components/layout/content/content_components/viajeros/viajeros.component';
-import { ReferenciasfComponent } from './components/layout/content/content_components/referenciasf/referenciasf.component';
-import { DestinosComponent } from './components/layout/content/content_components/destinos/destinos.component';
 import { Ejemplo1Component } from './components/ejemplos/ejemplo1/ejemplo1.component';
 import { Ejemplo2Component } from './components/ejemplos/ejemplo2/ejemplo2.component';
 import { Ejemplo3Component } from './components/ejemplos/ejemplo3/ejemplo3.component';
@@ -18,7 +10,14 @@ import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercici
 import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
 import { Ejemplo6Component } from './components/ejemplos/ejemplo6/ejemplo6.component';
 import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
+<<<<<<< HEAD
+import { MostrarViajerosComponent } from './components/viajeros/mostrar-viajeros/mostrar-viajeros.component';
+import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostrar-viajes.component';
+import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
+import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
+=======
 import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
+>>>>>>> 041bc311de65ef507a13618f5df4e42d2618c92f
 
 
 const routes: Routes = [
@@ -28,36 +27,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:"home",
-    component:HomeComponent
+    path: 'viajeros',
+    component: MostrarViajerosComponent
   },
   {
-    path: "destinos",
-    component: DestinosComponent
+    path: 'addviajeros',
+    component: CrearViajerosComponent
   },
   {
-    path: "viajeros",
-    component: ViajerosComponent
+    path: 'viajes',
+    component: MostrarViajesComponent
   },
   {
-    path: "familiares",
-    component: ReferenciasfComponent
-  },
-  {
-    path:"newyork",
-    component:NewyorkComponent
-  },
-  {
-    path:"londres",
-    component:LondresComponent
-  },
-  {
-    path:"venecia",
-    component:VeneciaComponent
-  },
-  {
-    path:"tokio",
-    component:TokioComponent
+    path: 'referencias',
+    component: MostrarReferenciasComponent
   },
   {
     path: "ejemplo1",
