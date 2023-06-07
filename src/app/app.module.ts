@@ -26,11 +26,10 @@ import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
 
 
 
-import { HttpClientModule } from '@angular/common/http';
+
 import { InputTextModule } from 'primeng/inputtext';
 import { ToastModule} from 'primeng/toast';
 import { MessageService} from 'primeng/api';
@@ -54,14 +53,10 @@ import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/cre
     Ejercicio1vistaComponent,
     Ejemplo6Component,
     AgregarUsuarioComponent,
-<<<<<<< HEAD
     MostrarViajerosComponent,
     MostrarViajesComponent,
     MostrarReferenciasComponent,
     CrearViajerosComponent,
-=======
-    MostrarClienteComponent,
->>>>>>> 041bc311de65ef507a13618f5df4e42d2618c92f
   ],
   imports: [
     BrowserModule,
@@ -72,15 +67,10 @@ import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/cre
     FormsModule,
     TableModule,
     ButtonModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
     HttpClientModule,
     InputTextModule,
     ToastModule
-=======
-    HttpClientModule
-
->>>>>>> 041bc311de65ef507a13618f5df4e42d2618c92f
     // TabMenuModule
   ],
   providers: [MessageService],

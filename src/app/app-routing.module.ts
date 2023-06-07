@@ -10,14 +10,12 @@ import { Ejercicio1Component } from './components/ejercicios/ejercicio1/ejercici
 import { Ejercicio1vistaComponent } from './components/ejercicios/ejercicio1vista/ejercicio1vista.component';
 import { Ejemplo6Component } from './components/ejemplos/ejemplo6/ejemplo6.component';
 import { AgregarUsuarioComponent } from './components/ejemplos/agregar-usuario/agregar-usuario.component';
-<<<<<<< HEAD
+
 import { MostrarViajerosComponent } from './components/viajeros/mostrar-viajeros/mostrar-viajeros.component';
 import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostrar-viajes.component';
 import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
 import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
-=======
-import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
->>>>>>> 041bc311de65ef507a13618f5df4e42d2618c92f
+
 
 
 const routes: Routes = [
@@ -78,10 +76,7 @@ const routes: Routes = [
     path: "ejemploAgregarUser",
     component: AgregarUsuarioComponent
   },
-  {
-    path: "mostrarCliente",
-    component: MostrarClienteComponent
-  }
+
 ];
 
 @NgModule({
