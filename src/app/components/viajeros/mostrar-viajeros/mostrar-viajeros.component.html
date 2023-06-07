@@ -17,18 +17,15 @@
       <th>Acciones</th>
     </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-ventas>
+  <ng-template pTemplate="body" let-viajeros>
     <tr>
-      <td>{{ventas.id}}</td>
-      <td>{{ventas.fechaVenta}}</td>
-      <td>{{ventas.subtotalVenta}}</td>
-      <td>{{ventas.impuestosVenta}}</td>
-      <td>{{ventas.descuentosVenta}}</td>
-      <td>{{ventas.totalVenta}}</td>
-      <td>{{ventas.cliente.nombreCliente}}</td>
+      <td>{{viajeros.id}}</td>
+      <td>{{viajeros.nombreCliente}}</td>
+      <td>{{viajeros.direccionCliente}}</td>
+      <td>{{viajeros.telefonoCliente}}</td>
       <td>
         <!-- <p-button icon="pi pi-plus" class="bg-cyan-600 mr-1" (click)="imprimir(ventas.id)"></p-button> -->
-        <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600 mr-1" [routerLink]="['/ventas/edit/', ventas.id]">
+        <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600 mr-1" [routerLink]="['/ventas/edit/', viajeros.id]">
         </a>
         <!-- <button type="button" pButton pRipple icon="pi pi-times" class="bg-cyan-600 mr-1" (click)="eliminarViajero(viajeros.id)">
         </button> -->
