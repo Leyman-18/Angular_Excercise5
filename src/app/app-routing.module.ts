@@ -15,6 +15,7 @@ import { MostrarViajerosComponent } from './components/viajeros/mostrar-viajeros
 import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostrar-viajes.component';
 import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
 import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
+import { ActualizarViajerosComponent } from './components/viajeros/actualizar-viajeros/actualizar-viajeros.component';
 
 
 
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'addviajeros',
     component: CrearViajerosComponent
+  },
+  {
+    path: 'viajeros/edit/:id',
+    component: ActualizarViajerosComponent
   },
   {
     path: 'viajes',

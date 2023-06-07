@@ -1,6 +1,6 @@
 <!-- <p>mostrar-viajeros works!</p> -->
 <div class="flex align-items-center justify-content-end bg-cyan-100">
-  <a pButton pRipple label="Agregar viajero" icon="pi pi-inbox" class="bg-cyan-600" [routerLink]="['/addventas']"></a>
+  <a pButton pRipple label="Agregar viajero" icon="pi pi-inbox" class="bg-cyan-600" [routerLink]="['/addviajeros']"></a>
 </div>
 
 <div>
@@ -25,10 +25,11 @@
       <td>{{viajeros.telefonoCliente}}</td>
       <td>
         <!-- <p-button icon="pi pi-plus" class="bg-cyan-600 mr-1" (click)="imprimir(ventas.id)"></p-button> -->
-        <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600 mr-1" [routerLink]="['/ventas/edit/', viajeros.id]">
+        <a pButton pRipple icon="pi pi-sync" styleClass="p-button-success" class="bg-cyan-600 mr-1" [routerLink]="['/viajeros/edit/', viajeros.id]">
         </a>
-        <!-- <button type="button" pButton pRipple icon="pi pi-times" class="bg-cyan-600 mr-1" (click)="eliminarViajero(viajeros.id)">
-        </button> -->
+        <button type="button" pButton pRipple icon="pi pi-times" class="bg-cyan-600 mr-1" (click)="eliminarViajero(viajeros.id)">
+        </button>
+        <!-- <p-button icon="pi pi-times" styleClass="p-button-danger" (click)="eliminarViajero(viajeros.id)"></p-button> -->
       </td>
     </tr>
   </ng-template>

@@ -37,6 +37,7 @@ import { MostrarViajerosComponent } from './components/viajeros/mostrar-viajeros
 import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostrar-viajes.component';
 import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
 import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
+import { ActualizarViajerosComponent } from './components/viajeros/actualizar-viajeros/actualizar-viajeros.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/cre
     MostrarViajesComponent,
     MostrarReferenciasComponent,
     CrearViajerosComponent,
+    ActualizarViajerosComponent,
   ],
   imports: [
     BrowserModule,

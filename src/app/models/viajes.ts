@@ -1,7 +1,7 @@
 export interface ViajesI {
     id?: number;
-    nombreCliente: string;
-    direccionCliente: string;
-    telefonoCliente: string;
+    numeroPlazas: string;
+    orgienId: number;
+    destinoId: number;
   }
   
