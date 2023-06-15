@@ -4,7 +4,6 @@ import { Message, MessageService } from 'primeng/api';
 import { ViajesI } from 'src/app/models/viajes';
 import { ViajesService } from 'src/app/services/viajes.service';
 
-
 @Component({
   selector: 'app-mostrar-viajes',
   templateUrl: './mostrar-viajes.component.html',
@@ -20,10 +19,10 @@ export class MostrarViajesComponent {
 
   }
   ngOnInit(): void {
-    this.mostrarViajero();
+    this.mostrarViajes();
   }
 
-  mostrarViajero(){
+  mostrarViajes(){
     this.viajesService.getAllViajes().subscribe({next: (data)=>{
       this.viajes = data.viajes
       console.log(this.viajes)

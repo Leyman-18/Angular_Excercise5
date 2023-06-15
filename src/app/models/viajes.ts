@@ -1,7 +1,7 @@
 export interface ViajesI {
     id?: number;
-    numeroPlazas: string;
-    orgienId: number;
-    destinoId: number;
+    numeroPlazas: number;
+    frv: number;
+    idViajero: number;
   }
   

@@ -20,9 +20,9 @@
     <ng-template pTemplate="body" let-viajes>
       <tr>
         <td>{{viajes.id}}</td>
-        <td>{{viajes.nombreCliente}}</td>
-        <td>{{viajes.direccionCliente}}</td>
-        <td>{{viajes.telefonoCliente}}</td>
+        <td>{{viajes.idViajero.nombreCliente}}</td>
+        <td>{{viajes.idViajero.direccionCliente}}</td>
+        <td>{{viajes.idViajero.telefonoCliente}}</td>
         <td>
           <!-- <p-button icon="pi pi-plus" class="bg-cyan-600 mr-1" (click)="imprimir(ventas.id)"></p-button> -->
           <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600 mr-1" [routerLink]="['/ventas/edit/', viajes.id]">
