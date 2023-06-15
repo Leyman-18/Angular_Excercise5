@@ -38,6 +38,8 @@ import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostr
 import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
 import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
 import { ActualizarViajerosComponent } from './components/viajeros/actualizar-viajeros/actualizar-viajeros.component';
+import { ActualizarViajesComponent } from './components/viajes/actualizar-viajes/actualizar-viajes.component';
+import { CrearViajesComponent } from './components/viajes/crear-viajes/crear-viajes.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { ActualizarViajerosComponent } from './components/viajeros/actualizar-vi
     MostrarReferenciasComponent,
     CrearViajerosComponent,
     ActualizarViajerosComponent,
+    ActualizarViajesComponent,
+    CrearViajesComponent,
   ],
   imports: [
     BrowserModule,
