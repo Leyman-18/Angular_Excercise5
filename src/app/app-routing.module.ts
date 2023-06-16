@@ -16,7 +16,8 @@ import { MostrarViajesComponent } from './components/viajes/mostrar-viajes/mostr
 import { MostrarReferenciasComponent } from './components/referencias/mostrar-referencias/mostrar-referencias.component';
 import { CrearViajerosComponent } from './components/viajeros/crear-viajeros/crear-viajeros.component';
 import { ActualizarViajerosComponent } from './components/viajeros/actualizar-viajeros/actualizar-viajeros.component';
-
+import { CrearViajesComponent } from './components/viajes/crear-viajes/crear-viajes.component';
+import { ActualizarViajesComponent } from './components/viajes/actualizar-viajes/actualizar-viajes.component';
 
 
 const routes: Routes = [
@@ -38,8 +39,16 @@ const routes: Routes = [
     component: ActualizarViajerosComponent
   },
   {
+    path: 'viajes/edit/:id',
+    component: ActualizarViajesComponent
+  },
+  {
     path: 'viajes',
     component: MostrarViajesComponent
+  },
+  {
+    path: 'addviajes',
+    component: CrearViajesComponent
   },
   {
     path: 'referencias',
