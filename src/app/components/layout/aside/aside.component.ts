@@ -18,11 +18,6 @@ export class AsideComponent implements OnInit {
         routerLink: '/viajeros',
       },
       {
-        label:'Referencias Familiares',
-        icon: 'pi pi-id-card',
-        routerLink: '/referencias',
-      },
-      {
         label: 'viajes',
         icon: 'pi pi-map-marker',
         routerLink: '/viajes'

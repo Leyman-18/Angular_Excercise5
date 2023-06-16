@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Message, MessageService } from 'primeng/api';
-import { ViajesI } from 'src/app/models/viajes';
+import { ViajesI } from 'src/app/models/viaje';
 import { ViajesService } from 'src/app/services/viajes.service';
+import { ViajerosI } from 'src/app/models/viajeros';
+import { ViajerosService } from 'src/app/services/viajeros.service';
 
 @Component({
   selector: 'app-actualizar-viajes',
@@ -12,16 +14,18 @@ import { ViajesService } from 'src/app/services/viajes.service';
 })
 export class ActualizarViajesComponent implements OnInit {
   id: number =0;
-
+  viajeros : ViajerosI[]=[];
   form: FormGroup = this.formBuilder.group({
     id: [''],
     numeroPlazas: ['',[Validators.required]],
-    idVaijero: ['',[Validators.required]],
+    frv: ['',[Validators.required]],
+    idViajero:['',[Validators.required]],
   });
 
   constructor(
     private route: ActivatedRoute,
     private formBuilder: FormBuilder,
+    private viajerosService: ViajerosService,
     private viajesService: ViajesService,
     private router: Router,
     private messageService: MessageService
@@ -29,9 +33,16 @@ export class ActualizarViajesComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
     this.getViajero(this.id);
+    this.getViaje(this.id);
   }
 
   getViajero(id: number){
+    this.viajerosService.getOneViajeros(id).subscribe({next: (data)=>{
+      this.form.setValue(data.viajeros)
+    }})
+  }
+
+  getViaje(id: number){
     this.viajesService.getOneViajes(id).subscribe({next: (data)=>{
       this.form.setValue(data.viajes)
     }})
@@ -56,4 +67,8 @@ export class ActualizarViajesComponent implements OnInit {
   cancel() {
     this.router.navigateByUrl('/viajes');
   }
+
+  get numeroPlazas() {return this.form.get('numeroPlazas');}
+  get frv() {return this.form.get('frv');}
+  get idViajero() {return this.form.get('idViajero');}
 }

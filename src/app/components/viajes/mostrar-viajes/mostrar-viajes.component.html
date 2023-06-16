@@ -1,6 +1,6 @@
 <!-- <p>mostrar-viajeros works!</p> -->
 <div class="flex align-items-center justify-content-end bg-cyan-100">
-    <a pButton pRipple label="Agregar Viaje" icon="pi pi-inbox" class="bg-cyan-600" [routerLink]="['/addventas']"></a>
+    <a pButton pRipple label="Agregar Viaje" icon="pi pi-inbox" class="bg-cyan-600" [routerLink]="['/addviajes']"></a>
   </div>
   
   <div>
@@ -10,25 +10,23 @@
   <p-table [value]="viajes">
     <ng-template pTemplate="header">
       <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
-        <th>Acciones</th>
+        <th>Id</th>
+        <th>Numero Plazas</th>
+        <th>Frv</th>
+        <th>Nombre Viajero</th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-viajes>
+    <ng-template pTemplate="body" let-viaje>
       <tr>
-        <td>{{viajes.id}}</td>
-        <td>{{viajes.idViajero.nombreCliente}}</td>
-        <td>{{viajes.idViajero.direccionCliente}}</td>
-        <td>{{viajes.idViajero.telefonoCliente}}</td>
+        <td>{{viaje.id}}</td>
+        <td>{{viaje.numeroPlazas}}</td>
+        <td>{{viaje.frv}}</td>
+        <td>{{viaje.viajeros.nombreCliente}}</td>
         <td>
           <!-- <p-button icon="pi pi-plus" class="bg-cyan-600 mr-1" (click)="imprimir(ventas.id)"></p-button> -->
-          <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600 mr-1" [routerLink]="['/ventas/edit/', viajes.id]">
-          </a>
-          <!-- <button type="button" pButton pRipple icon="pi pi-times" class="bg-cyan-600 mr-1" (click)="eliminarViajero(viajeros.id)">
-          </button> -->
+          <button type="button" pButton pRipple icon="pi pi-times" class="bg-cyan-600 mr-1" (click)="eliminarViajes(viaje.id)">
+          </button>
+          <!-- <p-button icon="pi pi-times" styleClass="p-button-danger" (click)="eliminarViajero(viajeros.id)"></p-button> -->
         </td>
       </tr>
     </ng-template>
